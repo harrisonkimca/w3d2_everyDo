@@ -18,7 +18,8 @@
 
 @implementation MasterViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self setupToDos];
     
@@ -32,7 +33,7 @@
 }
 
 
-- (void)setupToDos
+- (void)setupToDos // part 1
 {
     self.objects = [[NSMutableArray alloc]init];
     
@@ -68,20 +69,21 @@
     [self.objects addObject:myToDo5];
 }
 
-
-
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated
+{
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
-- (void)insertNewObject:(id)sender {
-    if (!self.objects) {
+- (void)insertNewObject:(id)sender
+{
+    if (!self.objects)
+    {
         self.objects = [[NSMutableArray alloc] init];
     }
     [self.objects insertObject:[NSDate date] atIndex:0];
@@ -92,7 +94,7 @@
 
 #pragma mark - Segues
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender // part 2
 {
     if ([[segue identifier] isEqualToString:@"showDetail"])
     {
@@ -105,20 +107,19 @@
     }
 }
 
-
 #pragma mark - Table View
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView // part 1
 {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section // part 1
 {
     return self.objects.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath // part 1
 {
     ToDoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ToDoTableViewCell" forIndexPath:indexPath];
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
@@ -130,18 +131,23 @@
 }
 
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
     // Return NO if you do not want the specified item to be editable.
     return YES;
     
 }
 
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath // part 1
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
         [self.objects removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+    }
+    else if (editingStyle == UITableViewCellEditingStyleInsert)
+    {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
 }

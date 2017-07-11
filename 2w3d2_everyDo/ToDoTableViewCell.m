@@ -20,7 +20,7 @@
 
 @implementation ToDoTableViewCell
 
-- (void)configureToDoCell:(ToDo*)toDo
+- (void)configureToDoCell:(ToDo*)toDo // part 1
 {
     self.myToDo = toDo;
     
@@ -36,7 +36,7 @@
     
 }
 
-- (void)strikeThruTitle
+- (void)strikeThruTitle // part 1
 {
     if (self.myToDo.isCompleted == YES)
     {
