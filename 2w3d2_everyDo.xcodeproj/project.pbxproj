@@ -16,6 +16,7 @@
 		881F5DAE1F1535BB00AA78C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881F5DAC1F1535BB00AA78C6 /* LaunchScreen.storyboard */; };
 		881F5DB91F1535BB00AA78C6 /* _w3d2_everyDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F5DB81F1535BB00AA78C6 /* _w3d2_everyDoTests.m */; };
 		881F5DC51F1536BD00AA78C6 /* ToDo.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F5DC41F1536BD00AA78C6 /* ToDo.m */; };
+		881F5DC81F1540FA00AA78C6 /* ToDoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F5DC71F1540FA00AA78C6 /* ToDoTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		881F5DBA1F1535BB00AA78C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881F5DC31F1536BD00AA78C6 /* ToDo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDo.h; sourceTree = "<group>"; };
 		881F5DC41F1536BD00AA78C6 /* ToDo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDo.m; sourceTree = "<group>"; };
+		881F5DC61F1540FA00AA78C6 /* ToDoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoTableViewCell.h; sourceTree = "<group>"; };
+		881F5DC71F1540FA00AA78C6 /* ToDoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +94,12 @@
 				881F5D9F1F1535BB00AA78C6 /* AppDelegate.m */,
 				881F5DA11F1535BB00AA78C6 /* MasterViewController.h */,
 				881F5DA21F1535BB00AA78C6 /* MasterViewController.m */,
+				881F5DC61F1540FA00AA78C6 /* ToDoTableViewCell.h */,
+				881F5DC71F1540FA00AA78C6 /* ToDoTableViewCell.m */,
 				881F5DA41F1535BB00AA78C6 /* DetailViewController.h */,
+				881F5DA51F1535BB00AA78C6 /* DetailViewController.m */,
 				881F5DC31F1536BD00AA78C6 /* ToDo.h */,
 				881F5DC41F1536BD00AA78C6 /* ToDo.m */,
-				881F5DA51F1535BB00AA78C6 /* DetailViewController.m */,
 				881F5DA71F1535BB00AA78C6 /* Main.storyboard */,
 				881F5DAA1F1535BB00AA78C6 /* Assets.xcassets */,
 				881F5DAC1F1535BB00AA78C6 /* LaunchScreen.storyboard */,
@@ -226,6 +231,7 @@
 				881F5DC51F1536BD00AA78C6 /* ToDo.m in Sources */,
 				881F5DA01F1535BB00AA78C6 /* AppDelegate.m in Sources */,
 				881F5DA31F1535BB00AA78C6 /* MasterViewController.m in Sources */,
+				881F5DC81F1540FA00AA78C6 /* ToDoTableViewCell.m in Sources */,
 				881F5D9D1F1535BB00AA78C6 /* main.m in Sources */,
 				881F5DA61F1535BB00AA78C6 /* DetailViewController.m in Sources */,
 			);
