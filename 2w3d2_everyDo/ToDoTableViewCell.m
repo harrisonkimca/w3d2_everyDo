@@ -48,7 +48,6 @@
     self.myToDo.isCompleted = !self.myToDo.isCompleted;
 }
 
-
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

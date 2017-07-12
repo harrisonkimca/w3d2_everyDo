@@ -31,7 +31,6 @@
     }
 }
 
-
 - (void)configureView // part 2
 {
     // Update the user interface for the detail item.
@@ -49,14 +48,12 @@
     }
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
 }
-
 
 - (void)didReceiveMemoryWarning
 {

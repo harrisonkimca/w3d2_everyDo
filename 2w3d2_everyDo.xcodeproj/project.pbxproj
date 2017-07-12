@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880BA4151F15695F00AF1646 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880BA4141F15695F00AF1646 /* AddItemViewController.m */; };
 		881F5D9D1F1535BB00AA78C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F5D9C1F1535BB00AA78C6 /* main.m */; };
 		881F5DA01F1535BB00AA78C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F5D9F1F1535BB00AA78C6 /* AppDelegate.m */; };
 		881F5DA31F1535BB00AA78C6 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F5DA21F1535BB00AA78C6 /* MasterViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		880BA4131F15695F00AF1646 /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
+		880BA4141F15695F00AF1646 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
 		881F5D981F1535BB00AA78C6 /* 2w3d2_everyDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2w3d2_everyDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		881F5D9C1F1535BB00AA78C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		881F5D9E1F1535BB00AA78C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				881F5DC71F1540FA00AA78C6 /* ToDoTableViewCell.m */,
 				881F5DA41F1535BB00AA78C6 /* DetailViewController.h */,
 				881F5DA51F1535BB00AA78C6 /* DetailViewController.m */,
+				880BA4131F15695F00AF1646 /* AddItemViewController.h */,
+				880BA4141F15695F00AF1646 /* AddItemViewController.m */,
 				881F5DC31F1536BD00AA78C6 /* ToDo.h */,
 				881F5DC41F1536BD00AA78C6 /* ToDo.m */,
 				881F5DA71F1535BB00AA78C6 /* Main.storyboard */,
@@ -230,6 +235,7 @@
 			files = (
 				881F5DC51F1536BD00AA78C6 /* ToDo.m in Sources */,
 				881F5DA01F1535BB00AA78C6 /* AppDelegate.m in Sources */,
+				880BA4151F15695F00AF1646 /* AddItemViewController.m in Sources */,
 				881F5DA31F1535BB00AA78C6 /* MasterViewController.m in Sources */,
 				881F5DC81F1540FA00AA78C6 /* ToDoTableViewCell.m in Sources */,
 				881F5D9D1F1535BB00AA78C6 /* main.m in Sources */,
@@ -430,6 +436,7 @@
 				881F5DBF1F1535BB00AA78C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		881F5DC01F1535BB00AA78C6 /* Build configuration list for PBXNativeTarget "2w3d2_everyDoTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +445,7 @@
 				881F5DC21F1535BB00AA78C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
